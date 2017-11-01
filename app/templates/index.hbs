@@ -1,0 +1,11 @@
+<article class="detail">
+  <div class="">
+    {{input-comp onUpdateResult=(route-action 'updateResult')}}
+  </div>
+</article>
+<article class="listing">
+  {{results}}
+  <div class="">
+    {{display-comp results=_results resultType=resultType}}
+  </div>
+</article>
