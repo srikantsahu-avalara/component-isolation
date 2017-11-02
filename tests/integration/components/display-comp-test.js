@@ -27,7 +27,7 @@ test('it renders as default', function (assert) {
   
   this.renderDisplayComponent();
 
-  assert.equal($('#result-header').text(), 'Results for  Numbers:');
+  assert.equal($('.result-header').text(), 'Results for  Numbers:');
 
 });
 
@@ -41,7 +41,7 @@ test('it renders with results', function (assert) {
     resultType: 'Even'
   });
 
-  assert.equal($('#result-header').text(), 'Results for Even Numbers:');
-  assert.equal($('#result-value').text(), '10|20|30');
+  assert.equal($('.result-header').text(), 'Results for Even Numbers:');
+  assert.equal($('.result-value').text(), '10|20|30');
 
 });

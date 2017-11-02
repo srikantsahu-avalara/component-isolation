@@ -1,12 +1,12 @@
 <div class="listing">
     <div class="large">
         <span>No. of Elements:</span>
-        {{input type="text" size="20" value=nValue}}
+        {{input type="text" id="nValue" size="20" value=nValue}}
     </div>
     <div class="small">
-        <button type="button" class="button" {{action 'onGenerateEven'}}>Generate Even Numbers</button>
+        <button type="button" id="genEven" class="button" {{action 'onGenerateEven'}}>Generate Even Numbers</button>
     </div>
     <div class="small">
-        <button type="button" class="button" {{action 'onGenerateFibonacci'}}>Find Fibonacy Series</button>
+        <button type="button" id="genFibonacci" class="button" {{action 'onGenerateFibonacci'}}>Find Fibonacy Series</button>
     </div>
 </div>

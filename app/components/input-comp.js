@@ -5,11 +5,11 @@ export default Ember.Component.extend({
     results: [],
     actions: {
         onGenerateFibonacci() {
-            let _results = this.generateFibonacci(this.nValue);
+            let _results = this.generateFibonacci(this.get('nValue'));
             this.get('onUpdateResult')('Fibonacci', _results);
         },
         onGenerateEven() {
-            let _results = this.generateEven(this.nValue);
+            let _results = this.generateEven(this.get('nValue'));
             this.get('onUpdateResult')('Even', _results);
         }
     },
